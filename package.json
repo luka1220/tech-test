@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "assert": "^2.0.0"
+  },
+  "name": "tech-test",
+  "description": "## 1. Deduplication algorithm",
+  "version": "1.0.0",
+  "main": "deduplicate.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha test_deduplicate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n3xtcoder/tech-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n3xtcoder/tech-test/issues"
+  },
+  "homepage": "https://github.com/n3xtcoder/tech-test#readme"
+}

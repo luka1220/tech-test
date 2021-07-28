@@ -1,0 +1,36 @@
+@startuml Booking System
+scale 2
+skinparam class {
+    BackgroundColor Cornsilk
+    ArrowColor DarkGoldenRod
+    BorderColor Moccasin
+}
+skinparam groupInheritence 2
+skinparam stereotypeCBackgroundColor GoldenRod
+skinparam object {
+    BackgroundColor Cornsilk/GoldenRod
+    ArrowColor DarkGoldenRod
+    BorderColor Moccasin
+}
+
+car : +int id
+car : +int userId
+
+user : +int id
+
+rental_contract : +date from 
+rental_contract : +date to
+
+rental_contract *-- "0..*" car
+rental_contract *-- "0..*" lender
+rental_contract *-- "0..*" borrower
+
+borrower --|> user : {complete, overlapping}
+lender --|> user
+
+
+borrower "1..*" --* car : owns
+
+
+
+@enduml
